@@ -1,0 +1,31 @@
+ALGORITHME sentenceREADER
+VAR
+    word,vl,length: INTEGER :=0 ;
+    c : CHAR ;
+
+BEGIN
+REPEAT
+    read(c) ;
+    
+    IF(length=0 and c=" " or c="." ) 
+        Write("you can not begin the sentance with space or point "); BREAK;
+     END_IF  
+   length:=length+1;
+    IF (c="a"or c="e" or c="o" or c="u" or c="i" or c="y" ) THEN
+        vl:=vl+1
+    END_IF
+    IF (c=" " or c=".") THEN
+        word:=word+1
+    END_IF
+
+UNTIL (c=".") 
+  write ("length of c is = " , length)
+  write ("number of vl in c is = ", vl)
+ write ("number of word in c is =  ", word)
+
+  
+  
+  
+   
+    
+END
